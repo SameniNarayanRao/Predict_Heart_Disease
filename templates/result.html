@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Predict - Heart Disease</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='url.png') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h1 class='container-heading'> <h1 style="font-family:verdana;font-size:200%;color:White" > Predict - Heart Disease </span></h1>
+            <div class='description'>
+    			<p>End to End Machine Learning Project, Built with Python & Flask, Deployed using Heroku </p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>Oops! You have Disease.</span></h1>
+				<h2 style="font-family:verdana;font-size:100%;color:Black;"> Adhere the right Treatment & Care as suggested by your Doctor !!!</><br>
+				<img src="static\unhappy.gif">
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T have Disease.</span></h1>
+				<h2 style="font-family:verdana;font-size:100%;color:Black;">(There are many things you can reduce your chances of getting heart disease, Please consult your family Doctor)</><br>
+				<img src="static\happy.gif">
+			{% endif %}
+		</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/SameniNarayanRao/Predict_Heart_Disease"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/narayan-rao-sameni-43358935/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.facebook.com/narayan.rao.1610/"><i class="fab fa-facebook fa-lg contact-icon"></i></a>
+               <a target="_blank" href="Test"><i class="fab fa-instagram fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Developed By : S. Narayan Rao </p>
+       </div>
+
+    </body>
+</html>

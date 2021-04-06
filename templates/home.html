@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Predict - Heart Disease</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='url.png') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <!-- Website Title -->
+    	<div class="container">
+            <h1 class='container-heading'> <h1 style="font-family:verdana;font-size:160%;color:White" > Predict - Heart Disease </span></h1>
+            <div class='description'>
+    			<p>End to End Machine Learning Project, Built with Python & Flask, Deployed using Heroku </p>
+    		</div>
+    	</div>
+       
+        </div><br>
+        <center><img src="static\2.gif" align="left" alt="image" height="300" weight="250">      
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="age" placeholder="Age (in Years)">
+                <input class="form-input" type="text" name="sex" placeholder="Sex (M=1 / F=2)">
+                <input class="form-input" type="text" name="cp" placeholder="Chest Pain Type (0/1/2/3)">
+                <input class="form-input" type="text" name="trestbps" placeholder="Systolic Blood Pressure at Rest (120)">
+                <input class="form-input" type="text" name="chol" placeholder="Serum Cholestoral in mg/dl (250)">
+                <input class="form-input" type="text" name="fbs" placeholder="Fasting Blood Sugar >120 mg/dl (0/1)">
+                <input class="form-input" type="text" name="restecg" placeholder="Resting Electrocardiographic Results (0/1/2)">
+                <input class="form-input" type="text" name="thalach" placeholder="Maximum Heart Rate Achieved (150)">
+                <input class="form-input" type="text" name="exang" placeholder="Exercise Induced Angina (0/1)">
+                <input class="form-input" type="text" name="oldpeak" placeholder="Exercise Induced ST Depression Relative to Rest (2.3)">
+                <input class="form-input" type="text" name="slope" placeholder="The Slope of the Peak Exercise ST Segment (0/1/2)">
+                <input class="form-input" type="text" name="ca" placeholder="Number of Major Vessels Colored by Fluoroscopy (0-3)">
+                <input class="form-input" type="text" name="thal" placeholder="Exercise Thallium Heart Scan (1/2/3)"><br>
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+    <marquee><i> The World Health Organization (WHO) lists cardiovascular diseases as the leading cause of death globally with 17.9 million people dying every year. Early diagnosis of such a disease is a crucial task for many health care providers to prevent their patients for such a disease and to save lives. In recent years, practitioners have increased their usage of computer technologies to improve decision-making support. In the health care industry, machine learning is becoming an important solution to aid the diagnosis of patients. Machine learning is an analytical tool used when a task is large and difficult to program, such as transforming medical record into knowledge, pandemic predictions, and genomic data analysis..
+</i></marquee>
+
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/SameniNarayanRao/Predict_Heart_Disease"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/narayan-rao-sameni-43358935/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.facebook.com/narayan.rao.1610/"><i class="fab fa-facebook fa-lg contact-icon"></i></a>
+               <a target="_blank" href="Test"><i class="fab fa-instagram fa-lg contact-icon"></i></a>
+           
+           </div>
+           <p class='footer-description'>Developed By : S. Narayan Rao </p>
+       </div>
+
+    </body>
+</html>
