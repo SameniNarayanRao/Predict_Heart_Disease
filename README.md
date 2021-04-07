@@ -7,7 +7,7 @@
 
   Seven months ago, I have done a Machine Learning Project : Predict Heart Disease to fulfil my Machine Learning Intermediate Assignment for Data Science course. Please find the link to know in details : https://www.linkedin.com/posts/narayan-rao-sameni-43358935_machinelearning-python-healthcare-activity-6712044096799694848-__qt
 
-From the ML Project Assignment - Key Insights :-
+From the ML Project Assignment found below Key Insights :-
   1.	68.32% of Males are getting affected by Heart Diseases.
   2.	Age group 41 to 54 are more risk.
   3.	The Coefficient of Correlation is very high for these 4 features - Chest Pain, Max Heart Rate, Slope of ST Segment & Electrocardiographic Result features are helping to  predict heart disease.
