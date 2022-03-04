@@ -13,7 +13,7 @@ From the ML Project Assignment found following Key Insights :-
   3.	The Coefficient of Correlation is very high for these 4 features - Chest Pain, Max Heart Rate, Slope of ST Segment & Electrocardiographic Result features are helping to  predict heart disease.
   4.	Random Forest & KNN model giving more accuracy i.e. 88.52% for predicting Heart Disease, whereas Logistic Regression is giving an accuracy of 85.25%.
 
-I have developed the End to End ML Classification Model and Deployed for external use : 
+I have developed the End to End ML Classification Model and Deployed for external use :- 
   •	Problem Statement
   •	Data Source – Kaggle Dataset on Heart Disease
   •	Data Cleaning & Exploratory Data Analysis (EDA)
